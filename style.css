@@ -1,0 +1,97 @@
+body {
+    color: #333;
+    font-weight: 100;
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+div:focus {
+    outline: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #b7b7b7;
+    margin: 1em 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#title {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Medium.woff2') format('woff2'), url('Montserrat-Medium.woff') format('woff');
+    font-weight: 600;
+    font-size: 48px;
+    padding-top: 30px;
+}
+
+#content {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Medium.woff2') format('woff2'), url('Montserrat-Medium.woff') format('woff');
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+#content[contenteditable=true]:empty::before {
+    content: attr(placeholder);
+    color: #727272;
+}
+
+#content[smol] {
+    font-size: 20px;
+}
+
+#title[contenteditable=true]:empty::before {
+    content: attr(placeholder);
+    color: #727272;
+}
+
+#title[medium] {
+    font-size: 38px;
+}
+
+#title[extramedium] {
+    font-size: 27px;
+}
+
+#header {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Medium.woff2') format('woff2'), url('Montserrat-Medium.woff') format('woff');
+    font-size: 20px;
+    font-weight: 100;
+    color: #595959;
+    white-space: nowrap
+}
+
+#header[save] {
+    font-size: 23px;
+    border-style: outset;
+    border-color: #7f7f7f;
+}
+
+#header[big] {
+    font-size: 30px;
+    color: #4c4c4c;
+}
+
+#header[big]:hover {
+    color: #262626;
+}
+
+#header:hover {
+    color: #404040;
+}
+
+hr[space] {
+    border-top: 0px solid white;
+}
+
+[class~=summary][indent] {
+    text-indent: 30pt;
+}
