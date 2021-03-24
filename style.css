@@ -1,8 +1,15 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
-    color: #333;
+    color: black;
     font-weight: 100;
     max-width: 50em;
     margin: 0 auto;
+    font-family: 'Montserrat';
 }
 
 div:focus {
@@ -20,19 +27,16 @@ hr {
 
 a {
     text-decoration: none;
+    color: #595959;
 }
 
 #title {
-    font-family: 'Montserrat';
-    src: url('Montserrat-Medium.woff2') format('woff2'), url('Montserrat-Medium.woff') format('woff');
     font-weight: 600;
     font-size: 48px;
     padding-top: 30px;
 }
 
 #content {
-    font-family: 'Montserrat';
-    src: url('Montserrat-Medium.woff2') format('woff2'), url('Montserrat-Medium.woff') format('woff');
     font-size: 25px;
     font-weight: 500;
     padding-top: 10px;
@@ -61,11 +65,9 @@ a {
 }
 
 #header {
-    font-family: 'Montserrat';
-    src: url('Montserrat-Medium.woff2') format('woff2'), url('Montserrat-Medium.woff') format('woff');
     font-size: 20px;
     font-weight: 100;
-    color: #595959;
+    color: #4d4d4d;
     white-space: nowrap
 }
 
@@ -92,6 +94,14 @@ hr[space] {
     border-top: 0px solid white;
 }
 
-[class~=summary][indent] {
-    text-indent: 30pt;
+.tabfocused { 
+    text-indent:40px;
+}
+
+.tab {
+    text-indent: 0px;
+}
+
+.tab::focus {
+    text-indent: 40px;
 }
